@@ -22,7 +22,8 @@ Quebrar os silos tradicionais de dados entre as equipes de Infraestrutura e Segu
 O maior desafio da integração foi o bloqueio de conexão entre o Grafana e o banco de dados do Wazuh (*Connection Refused*). 
 **Resolução:** Análise de portas locais (`ss -ltnp`) e reconfiguração do arquivo `opensearch.yml` no nó do Wazuh-Indexer, alterando o `network.host` de `127.0.0.1` para `0.0.0.0`, liberando o binding de rede externo.
 
-## 📈 Resultado
-**
+Abaixo, o dashboard unificado em operação. Note a correlação em tempo real entre a saúde do cluster (CPU/Rede) e o mapeamento de táticas do MITRE ATT&CK e conformidade (NIST/GDPR):
+
+![Dashboard SOC Unificado Grafana e Wazuh](dashboard-wazuh-grafana.jpg)
 
 Com este setup, o tempo médio para diagnosticar a causa raiz de incidentes (MTTR) foi reduzido a segundos, provando o valor tático do DevSecOps e da observabilidade unificada.
