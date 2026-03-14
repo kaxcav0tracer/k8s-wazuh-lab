@@ -23,6 +23,6 @@ O maior desafio da integração foi o bloqueio de conexão entre o Grafana e o b
 **Resolução:** Análise de portas locais (`ss -ltnp`) e reconfiguração do arquivo `opensearch.yml` no nó do Wazuh-Indexer, alterando o `network.host` de `127.0.0.1` para `0.0.0.0`, liberando o binding de rede externo.
 
 ## 📈 Resultado
-*(Adicione aqui um print do seu dashboard do Grafana mostrando CPU vs Alertas)*
+**
 
 Com este setup, o tempo médio para diagnosticar a causa raiz de incidentes (MTTR) foi reduzido a segundos, provando o valor tático do DevSecOps e da observabilidade unificada.
