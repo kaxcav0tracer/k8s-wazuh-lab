@@ -73,3 +73,4 @@ Abaixo, o dashboard unificado em operação. Note a correlação em tempo real e
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=100&section=footer" width="100%" />
 </div>
+
